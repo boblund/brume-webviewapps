@@ -1,0 +1,21 @@
+{
+  "name": "browserbrume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WebviewBrume.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webview-nodejs": "^0.4.1"
+  },
+  "devDependencies": {
+    "ifdef-loader": "^2.3.2",
+    "path-browserify": "^1.0.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

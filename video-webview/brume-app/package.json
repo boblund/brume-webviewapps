@@ -1,0 +1,28 @@
+{
+  "name": "brume",
+  "version": "1.0.0",
+  "description": "webrtc shared files",
+  "main": "Brume.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boblund/brume.git"
+  },
+  "author": "Bob Lund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boblund/brume/issues"
+  },
+  "homepage": "https://github.com/boblund/brume#readme",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.484.0",
+    "browser-cjs": "^1.0.3",
+    "brume-client": "github:boblund/brume-client#main",
+    "Channel": "github:boblund/js-caf",
+    "events": "^3.3.0",
+    "simple-peer": "^9.11.1"
+  }
+}

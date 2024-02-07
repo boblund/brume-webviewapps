@@ -1,0 +1,6 @@
+√ webapp demos and fileGroup all using brume-client#dynamic-streams
+√ merge brume-client#dynamic streams with main
+update app package.json to use brume-client#main
+test
+
+replace brume-client/cognitoAuth with webview-nodjs-apps

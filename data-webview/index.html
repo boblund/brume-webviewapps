@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Brume</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="./index.css">
+	</head>
+	<body>
+		<p id="idP"></p>
+		<div id="dialogDiv" class="dialog" hidden>
+			<p id="dialogMsg"></p>
+			<span style="float: right;">
+				<button id="cancelBtn" class="cancelBtn">Cancel</button>
+				<button id="OKBtn" class="OKBtn">OK</button>
+			</span>
+		</div>
+		<div id="login" style="display:none">
+			<brume-login id="brumeLogin" loaded="false"></brume-login>
+		</div>
+		<div class="w3-container container" style="display:none" id="app">
+			<brume-call id="call" loaded="false"></brume-call>
+			<div class="w3-cell-row" id="dataArea"></div>
+		</div>
+	</body>
+	<script src="main.js"></script>
+</html>

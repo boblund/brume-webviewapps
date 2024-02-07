@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Brume</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="./index.css">
+
+		<style>
+			.local-div {
+				position: relative;
+			 	height:20%;
+				width:auto;
+				margin:5px;
+				z-index: 0;
+			}
+
+			.video-button {
+				width:auto;
+				height:17px;
+				font-size:12px;
+				line-height: 0px;
+				position: absolute;
+				bottom: 2px;
+				left: 2px;
+				z-index: 1;
+			}
+
+			.remote-div{
+				position: relative;
+			 	height:60%;
+				width:auto;
+				margin:5px;
+			}
+
+			.video-div {
+				position: relative;
+			}
+
+			.fit-video {
+				width: auto;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="idP"></p>
+
+		<div id="dialogDiv" class="dialog" hidden>
+			<p id="dialogMsg"></p>
+			<span style="float: right;">
+				<button id="cancelBtn" class="cancelBtn">Cancel</button>
+				<button id="OKBtn" class="OKBtn">OK</button>
+			</span>
+		</div>
+
+		<div id="login" style="display:none">
+			<brume-login id="brumeLogin" loaded="false"></brume-login>
+		</div>
+
+		<div id="app" class="w3-container container" style="display:none">
+			<brume-call id="call" loaded="false"></brume-call>
+			<div class="w3-cell-row" id="dataArea"></div>
+		</div>
+
+		<div id="localDiv" class='local-div'>
+			<video id='local' class="fit-video"></video>
+			<button id="localButton" class="video-button local">Your video</button>
+		</div>
+		
+		<div id="remoteDiv" class="remote-div">
+			<video id='remote' class="fit-video"></video>
+			<button id="remoteButton" class="video-button remote">Remote video</button>
+		</div>
+
+	</body>
+	<script src="./cognitoAuth.js"></script>
+	<script type="module" src="./main.mjs"></script>
+</html>
