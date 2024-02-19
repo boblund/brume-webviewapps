@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Brume</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="./index.css">
+	</head>
+	<body>
+		<p id="idP"></p>
+		<div id="dialogDiv" class="dialog" hidden>
+			<p id="dialogMsg"></p>
+			<span style="float: right;">
+				<button id="cancelBtn" class="cancelBtn">Cancel</button>
+				<button id="OKBtn" class="OKBtn">OK</button>
+			</span>
+		</div>
+		<div id="login" style="display:none">
+			<brume-login id="brumeLogin" loaded="false"></brume-login>
+		</div>
+		<div id="app" class="w3-container container" style="display:none">
+			<brume-call id="call" loaded="false"></brume-call>
+
+			</br></br>
+			<div id="sendFile" class="w3-cell-row" style="display: none">
+				<input type="file" id="inFile">
+			</div>
+
+			</br></br>
+			<div id="outFile" class="w3-cell-row" style="display: none">
+				<button id = "saveFileBtn" class="hidden">Save File</button>
+			</div>
+		</div>
+	</body>
+	<script src="./cognitoAuth.js"></script>
+	<script type="module" src="main.mjs"></script>
+</html>

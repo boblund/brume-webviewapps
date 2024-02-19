@@ -1,0 +1,32 @@
+{
+  "name": "browserbrume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WebviewBrume.mjs",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "ffi-napi": "^4.0.3",
+    "get-symbol-from-current-process-h": "^1.0.2",
+    "get-uv-event-loop-napi-h": "^1.0.6",
+    "ms": "^2.1.2",
+    "node-addon-api": "^3.2.1",
+    "node-gyp-build": "^4.7.1",
+    "process": "^0.11.10",
+    "ref-napi": "^3.0.3",
+    "ref-struct-di": "^1.1.1",
+    "undici-types": "^5.26.5",
+    "webview-nodejs": "^0.4.1"
+  },
+  "devDependencies": {
+    "ifdef-loader": "^2.3.2",
+    "path-browserify": "^1.0.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}

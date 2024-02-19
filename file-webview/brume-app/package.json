@@ -1,0 +1,19 @@
+{
+  "name": "brume-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "msin.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.481.0",
+    "browser-cjs": "^1.0.3",
+    "brume-client": "github:boblund/brume-client#main",
+    "Channel": "github:boblund/js-caf",
+    "events": "^3.3.0",
+    "simple-peer": "^9.11.1"
+  }
+}

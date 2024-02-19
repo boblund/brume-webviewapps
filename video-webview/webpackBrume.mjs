@@ -1,8 +1,6 @@
 'use strict';
 
 import { Webview } from 'webview-nodejs';
-//import {open_file, save_file} from './portableDialogsJs.js';
-//import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'fs';
 import {join} from 'path';
 import {URL} from 'url';
 
@@ -16,9 +14,11 @@ function main() {
 	w.navigate(`file://${join(__dirname, htmlFile)}`);
 	w.init(`
 		window.webview=true;
-		window.console.log = (s) => consoleLog(s);`
-	);
+		window.console.log = (s) => consoleLog(s);
+	`);
+
 	w.bind('consoleLog', (w, msg) => { console.log(msg); });
+
 	/*const wvDir = `${process.env.HOME}/.webview`;
 	if(!existsSync(wvDir)){ mkdirSync(wvDir, 0x744); }
 	const localStorageFile = `${wvDir}/localStorage_min_ed`;
